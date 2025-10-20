@@ -182,7 +182,7 @@
     left: 80px;
     width: calc(100% - 80px);
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     padding: 20px 40px;
     z-index: 1000;
@@ -197,12 +197,22 @@
       background-color: rgba(0, 0, 0, 0.9);
   }
   
+  .logo {
+      order: 1;
+  }
+
   .logo .logo-link {
       display: flex;
       align-items: center;
       text-decoration: none;
       gap: 15px;
   }
+
+  .logo-image {
+      height: 50px;
+      width: auto;
+  }
+
   .logo-taj {
       font-size: 48px;
       font-weight: 200;
@@ -229,6 +239,10 @@
   .app-header.on-light .logo-taj { color: var(--text-dark); }
   .app-header:not([class*="on-"]) .logo-taj { color: var(--text-dark); }
   
+  .main-nav {
+      order: 2;
+  }
+
   .main-nav ul {
     list-style: none;
     display: flex;
@@ -427,6 +441,7 @@
       font-size: 24px;
       z-index: 1002;
       padding: 5px;
+      order: 3;
   }
   .app-header.on-dark .burger-menu { color: var(--text-light); }
   .app-header.on-light .burger-menu { color: var(--text-dark); }
