@@ -310,7 +310,7 @@ html, body {
     border: 1px solid var(--border-light);
 }
 .app-header.on-light .dropdown-menu {
-    background-color: #fff;
+    background-color: #000000;
     border: 1px solid #eee;
 }
 
