@@ -169,21 +169,17 @@ html, body {
 }
 
 .app-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between; /* logo left, nav right */
   position: fixed;
   top: 0;
-  left: 0;
-  width: 100%;
-}
-.logo {
+  left: 80px;
+  width: calc(100% - 80px);
   display: flex;
+  justify-content: flex-end;
   align-items: center;
-  justify-content: flex-start; /* aligns logo to the left */
-}
-.logo img {
-  height: 80px; /* example */
+  padding: 20px 40px;
+  background-color: #000000;
+  z-index: 1000;
+  transition: background-color 0.4s ease, box-shadow 0.4s ease;
 }
 
 .app-header.scrolled.on-light {
