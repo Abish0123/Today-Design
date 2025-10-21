@@ -187,8 +187,9 @@
   }
 
   .logo-image {
-      height: 120px;
+      height: 80px;
       width: auto;
+      margin-left :50px;
   }
   
   .main-nav ul {
