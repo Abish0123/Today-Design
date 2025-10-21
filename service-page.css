@@ -3,7 +3,7 @@
   --dark-bg: #111111;
   --dark-bg-secondary: #1c1c1c;
   --text-light: #ffffff;
-  --text-dark: #111111;
+  --text-dark: #FFFFFF;
   --accent-color: #D4AF37;
   --accent-color-shadow: 0 0 10px #D4AF37, 0 0 20px #B89B32, 0 0 30px #9C822A;
   --accent-color-shadow-small: 0 0 5px #D4AF37, 0 0 10px #B89B32;
@@ -177,12 +177,13 @@ html, body {
   justify-content: flex-end;
   align-items: center;
   padding: 20px 40px;
+  background-color: #000000;
   z-index: 1000;
   transition: background-color 0.4s ease, box-shadow 0.4s ease;
 }
 
 .app-header.scrolled.on-light {
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color:#000000;
     box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
 .app-header.scrolled.on-dark {
@@ -248,6 +249,11 @@ html, body {
 }
 .app-header.on-light .main-nav a {
     color: var(--text-dark);
+}
+
+.logo-image {
+    height: 80px;
+    width: auto;
 }
 
 .main-nav a::after {
